@@ -1,0 +1,201 @@
+/**** BASE STYLES *****/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;   /* google web font and back up */ 
+}
+
+#about, #work, #contact {
+    height: 1150px; /* to make the sections taller  */
+}
+
+/***** GRID *****/
+.full-width {
+    width: 1200px; /* based on 12 column grid */
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px; /* the first 6 of 12 grid*/
+    float: left; /* to convert from block to inline */
+}
+
+.third-width {
+    width: 400px; /* second half of the grid */
+    float: left; /* to put next to the half-width */
+}
+
+/*********** HEADER ******************/
+
+header {
+    height: 800px;
+    background: url('../img/background-clipping-mask.png'); /*** the "../" is key because it is relative to main.css which is in another folder ***/
+    background-size: cover;
+}
+
+header h1 {
+    padding: 50px 0;
+    font-family: 'Lora Bold', sans-serif;
+    font-size: 30px;
+    color: #bbc085;
+}
+#hire-me-button {
+    background-color: #9a9b9b;
+    font-weight: 700;
+    text-align:center;
+    padding: 5px;
+    margin: 0;
+    width: 75px;
+    float: right;
+    border: solid #bbc085 3px;
+}
+    
+    #hire-me-button a{    
+    text-decoration: none;
+}
+nav {
+    float: right;
+    padding: 75px 40px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color:#9a9b9b;
+    padding-left: 80px;
+}
+
+
+header h2 {
+    width: 950px;
+    clear: right;
+    font-family: 'Lora Bold';
+    font-size: 72px;
+    line-height: 80px;
+    color: #9a9b9b;/* grey */
+    padding: 20px 0;
+}
+
+header h2 span {
+    color: #262a2b;
+}
+/****** About Section ******/
+#about .full-width { /* this is a combination so that we can target a specific section in the about section */
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-family: 'Lora Bold', sans-serif; /* downloaded from */
+    font-size: 36px; /* taken from psd */
+}
+
+#about p {
+    font-size: 21px; /* taken from psd */
+    font-family: 'Source Sans Pro', sans-serif; /* downloaded from google fonts and backup */
+    color: #7f7f7f; /* taken from psd */
+    line-height: 40px;
+}
+
+#about ol li {
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #7f7f7f;
+    line-height: 40px;
+}
+
+/***** Work Section *****/
+
+#work {
+    background: #f9ceb7;
+    text-align: center;
+    
+}
+#work .full-width {
+    padding: 115px 0;
+    overflow: auto;
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    width: 190px;
+    margin: 0 auto;
+    padding-bottom: 36px;
+}
+
+#work p {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #262a2b;
+    padding: 0 35px;
+    margin: 0 auto;
+}
+
+/****** Contact Section ******/
+
+#contact {
+    background: #ebebeb;
+}
+#contact .full-width {
+    padding: 110px 0;
+    overflow: auto;
+}
+
+#contact-img {
+    border: 12px solid #ffffff;
+    border-width: 18px;
+}
+
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+
+#envelope {
+    padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+    font-family: 'Lora Bold', sans-serif;
+    font-size: 36px;
+}
+
+#email-header {
+    font-size: 28px;
+    font-weight: lighter;
+    margin: -30px 0 5px 0;
+}
+
+#socialmedia-header {
+    font-weight: bolder;
+    font-size: 28px;
+    
+}
+
+#contact a {
+    text-decoration: none;
+    color: #C49075;
+    font-weight: 800px;
+    font-size: 28px;
+}
+
+#contact ul {
+    list-style: none; /* takes away the bullet points */
+}
+
+#contact ul li {
+    display: inline-block; /* puts all on same line */
+}
+
+#contact ul img {
+    padding-right: 48px; /* gives a little space */
+}
